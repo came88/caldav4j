@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B compile --file pom.xml
+      run: mvn -B -DskipTests=true package --file pom.xml
